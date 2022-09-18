@@ -2,7 +2,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-     <title>VaidrollTeamLogin7</title>
+     <title>Página Administrador</title>
      <link rel="stylesheet" href="estilos.css">	
 </head>
 <table>
