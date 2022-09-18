@@ -1,9 +1,9 @@
 <?php
 
-$dbhost = "localhost";
-$dbuser = "root";
-$dbpass = "";
-$dbname = "mesa_ayuda";
+$dbhost = "mesaayuda.mysql.database.azure.com";
+$dbuser = "bdmesaayuda";
+$dbpass = "C4r0l1n42020*";
+$dbname = "mesaayuda";
 
 $conn = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
 	
