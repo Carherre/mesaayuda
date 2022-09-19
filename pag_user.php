@@ -7,7 +7,7 @@
 </head>
 <body>
 <table>
-<th>Bienvenido usuario</th><th><a href="index.html">Regresar</a></th>
+<th>Bienvenido usuarios</th><th><a href="index.html">Regresar</a></th>
 <a href="index.html">Regresar</a>
 </table>
 </body>
