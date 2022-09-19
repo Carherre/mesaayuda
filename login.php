@@ -8,13 +8,13 @@ $pass 	= $_POST["txtpassword"];
 $queryusuario = mysqli_query($conn,"SELECT * FROM login WHERE usuario ='$usuario' and pass = '$pass'");
 $nr 		= mysqli_num_rows($queryusuario);  
 	
-/*if ($nr == 1 )  
+if ($nr == 1 )  
 	{ 
-		if($rol=="Usuario")
+		if($usuario=="usuario")
 			{	
 				header("Location: pag_user.php");
 			}
-		else if ($rol=="Admin")
+		else if ($usuario=="carolina")
 			{
 				header("Location: pag_admin.php");
 			}
@@ -22,6 +22,6 @@ $nr 		= mysqli_num_rows($queryusuario);
 	else
 	{
 	echo "<script> alert('Usuario, contraseña o rol incorrecto.');window.location= 'index.html' </script>";
-	}*/
+	}
  
 ?>
