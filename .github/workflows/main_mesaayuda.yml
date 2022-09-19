@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'mesaayuda'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_323C1A7395A0413694D68E62C4554840 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_96BB12EC3DE54C65A3E9C39FB9CD50E8 }}
           package: .
