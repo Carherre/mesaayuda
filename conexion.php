@@ -14,15 +14,9 @@
 	
 	# Comprobar si existe registro
 	
-	$query = “SELECCIONAR * DESDE $usertable”;
+	$query = select * from $usertable”;
 	
 	$result = mysqli_query($query);
 	
-	si($result){
-		while($row = mysqli_fetch_array($result)){
-			$name = $row["$yourfield"];
-			echo "Nombre: ".$name."br/>";
-		}
-	}
 ?>
 
