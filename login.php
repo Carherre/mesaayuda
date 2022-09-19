@@ -10,11 +10,11 @@ $nr 		= mysqli_num_rows($queryusuario);
 	
 if ($nr == 1 )  
 	{ 
-		if($usuario=="usuario")
+		if($usuario == "usuario")
 			{	
 				header("Location: pag_user.php");
 			}
-		else if ($usuario=="carolina")
+		else if ($usuari == "carolina")
 			{
 				header("Location: pag_admin.php");
 			}
