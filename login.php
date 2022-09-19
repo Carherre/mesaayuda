@@ -22,9 +22,9 @@ if ($nr == 1 )
 				header("Location: pag_admin.php");
 			}
 	}
-#else
-	#{
-#	echo "<script> alert('Usuario, contraseña o rol incorrecto.');window.location= 'index.html' </script>";
-#	}
+	else
+	{
+	echo "<script> alert('Usuario, contraseña o rol incorrecto.');window.location= 'index.html' </script>";
+	}
  
 ?>
