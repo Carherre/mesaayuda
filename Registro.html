@@ -1,0 +1,46 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mesa_Ayuda_app</title>
+     <link rel="stylesheet" href="estilos.css">	
+</head>
+<body>
+<div class="caja1">
+<form method="post" action="registro.php">
+<div class="formtlo">Registro</div>
+<div class="ub1">&#128273; Ingresar nuevo usuario</div>
+<input type="text" name="txtusuario1">
+<div class="ub1">&#128274; Ingresar nuevo password</div>
+<input type="password" name="txtpassword1" id="txtpassword1">
+<div class="ub1">
+<input type="checkbox" onclick="verpassword()" >Mostrar contraseña
+ </div>
+ <div class="ub1">Rol</div>
+<select name="roles">
+<option value="0" style="display:none;"><label>Seleccionar</label></option>
+<option value="Usuario">Usuario</option>
+<option value="Admin">Administrador</option>
+</select>
+<div align="center">
+<input type="submit" value="Registrar">
+<input type="reset" value="Limpiar"></div></br>
+<a class="fcc-btn" href= "/index.html">Volver</a>  
+</div>
+<form>
+</div>
+</body>
+<script>
+  function verpassword(){
+      var tipo = document.getElementById("txtpassword1");
+      if(tipo.type == "password")
+	  {
+          tipo.type = "text";
+      }
+	  else
+	  {
+          tipo.type = "password";
+      }
+  }
+</script>
+</html>

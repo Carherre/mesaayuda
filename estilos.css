@@ -89,9 +89,8 @@ a
 {
 	font-size: 1em;
 	text-align:center;
-	
 	display: inline-block;
-	background-color:#FABD44;
+	background-color:#000;
 	padding: 0.5em 0.5em;
 	border-radius:0.2em;
 	text-decoration: none;
@@ -99,6 +98,11 @@ a
 	border:0.1em solid black;
 	cursor:pointer;
 }
+
+.fcc-btn {
+	background-color: #f3f3f3;
+	color: black;
+  }
 
 .formtlo
 {

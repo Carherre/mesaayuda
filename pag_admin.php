@@ -2,7 +2,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-     <title>Página Administrador</title>
+     <title>Mesa_Ayuda_app</title>
      <link rel="stylesheet" href="estilos.css">	
 </head>
 <table>
@@ -17,7 +17,7 @@
 
 <?php
 
-include('conexion.php');
+ include('conexion.php');
 
 $sql="select * from login";
 $resultado=mysqli_query($conn,$sql);

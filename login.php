@@ -1,27 +1,27 @@
 <?php
 
- include('conexion.php');
+include('conexion.php');
 
-$usuario = $_POST["txtusuario"];
+$usuario 	= $_POST["txtusuario"];
 $pass 	= $_POST["txtpassword"];
+$rol 	= $_POST["rol"];
 
-$queryusuario = mysqli_query($conn,"SELECT * FROM login WHERE usuario ='$usuario' and pass = '$pass'");
-$nr 		= mysqli_num_rows($queryusuario);  
+if(isset($_POST["btnloginx"]))
+{
+
+$queryusuario = mysqli_query($conn,"SELECT * FROM login WHERE usuario = '$usuario'");
+$nr 		= mysqli_num_rows($queryusuario); 
+$mostrar	= mysqli_fetch_array($queryusuario); 
 	
-if ($nr == 1 )  
-	{ 
-		if($usuario == "usuario")
-			{	
-				header("Location: pag_user.php");
-			}
-		else if ($usuari == "carolina")
-			{
-				header("Location: pag_admin.php");
-			}
-	}
-	else
+if (($nr == 1) && (password_verify($pass,$mostrar['pass'])) )
 	{
-	echo "<script> alert('Usuario, contraseña o rol incorrecto.');window.location= 'index.html' </script>";
+	
+	echo "Bienvenido";
+}
+else
+	{
+	echo "<script> alert('Usuario o contraseña incorrecto.');window.location= 'index.html' </script>";
 	}
- 
+}
+
 ?>
