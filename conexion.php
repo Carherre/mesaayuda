@@ -3,11 +3,10 @@
 	
 	//Conectar a la base de datos
 	
-	$hostname="mesaayuda.mysql.database.azure.com";
+	$hostname="bdmesaayuda.mysql.database.azure.com";
 	$username="bdmesaayuda";
 	$password="C4r0l1n42020*";
-	$dbname="it";
-	$usertable="ingreso";
+
 	
 	mysqli_connect($hostname,$username, $password) o morir ("html>script language='JavaScript'>alert('¡No es posible conectarse a la base de datos! Vuelve a intentarlo más tarde.'),history.go(-1)/script>/html>");
 	mysqli_select_db($dbname);
